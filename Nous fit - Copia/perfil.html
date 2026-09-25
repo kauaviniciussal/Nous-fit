@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Configurações da página -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfil - Nous Fit</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="perfil.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+
+        <h1>NOUS FIT</h1>
+
+        <nav>
+
+            <a href="dashboard.html">Dashboard</a>
+            <a href="treinos.html">Treinos</a>
+            <a href="nutricao.html">Nutrição</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="login.html">Sair</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <section class="hero">
+
+            <h2>Meu Perfil</h2>
+
+            <p>
+                Complete suas informações para receber recomendações personalizadas.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <form>
+
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" placeholder="18">
+
+                <label for="sexo">Sexo</label>
+
+                <select id="sexo">
+
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Prefiro não informar</option>
+
+                </select>
+
+                <label for="altura">Altura (cm)</label>
+                <input type="number" id="altura" placeholder="173">
+
+                <label for="peso">Peso (kg)</label>
+                <input type="number" id="peso" placeholder="73">
+
+                <label for="objetivo">Objetivo</label>
+
+                <select id="objetivo">
+
+                    <option>Hipertrofia</option>
+                    <option>Emagrecimento</option>
+                    <option>Condicionamento</option>
+                    <option>Definição</option>
+
+                </select>
+
+                <label for="nivel">Nível de Treino</label>
+
+                <select id="nivel">
+
+                    <option>Iniciante</option>
+                    <option>Intermediário</option>
+                    <option>Avançado</option>
+
+                </select>
+
+                <label for="dias">Dias disponíveis para treinar</label>
+                <input type="number" id="dias" placeholder="5">
+
+                <label for="lesoes">Lesões ou restrições (opcional)</label>
+
+                <textarea
+                    id="lesoes"
+                    rows="5"
+                    placeholder="Descreva aqui..."
+                ></textarea>
+
+                <button type="submit">
+                    Salvar Perfil
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <p>© 2026 Nous Fit - Todos os direitos reservados.</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+/* Remove a margem e o espaçamento padrão de todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a fonte e a cor de fundo da página */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Cabeçalho */
+header{
+    display: flex;                 /* Coloca os elementos lado a lado */
+    justify-content: space-between;/* Espaço entre logo e menu */
+    align-items: center;           /* Centraliza verticalmente */
+    padding: 20px 60px;
+    background-color: #000;
+}
+
+/* Nome da empresa */
+header h1{
+    color: #FFD700; /* Dourado */
+}
+
+/* Menu */
+nav a{
+    color: white;
+    text-decoration: none; /* Remove o sublinhado */
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+/* Cor quando passa o mouse */
+nav a:hover{
+    color: #FFD700;
+}
+
+/* Seção principal */
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Título principal */
+.hero h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Texto */
+.hero p{
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Botão */
+button{
+    margin-top: 35px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover{
+    transform: scale(1.05);
+}
+
+/* Área dos cartões */
+.recursos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px;
+}
+
+/* Cartão */
+.card{
+    background-color: #1f1f1f;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover{
+    transform: translateY(-10px);
+}
+
+/* Título do cartão */
+.card h3{
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+/* Rodapé */
+footer{
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    background-color: black;
+}
